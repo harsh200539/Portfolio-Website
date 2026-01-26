@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+  /* Space Theme Colors */
+  --space-black: #0a0e27;
+  --space-dark: #1a1f3a;
+  --space-blue: #2d3561;
+  --space-purple: #6b4c9a;
+  --space-pink: #c74b7c;
+  --space-cyan: #4dd4e8;
+  --space-white: #f0f4f8;
+  --nebula-purple: rgba(107, 76, 154, 0.3);
+  --nebula-blue: rgba(45, 53, 97, 0.3);
+  
+  /* Gradients */
+  --gradient-cosmic: linear-gradient(135deg, var(--space-purple), var(--space-blue), var(--space-black));
+  --gradient-nebula: linear-gradient(45deg, rgba(107, 76, 154, 0.2), rgba(77, 212, 232, 0.2));
+  --gradient-glow: radial-gradient(circle, rgba(77, 212, 232, 0.3), transparent);
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 6rem;
+  
+  /* Typography */
+  --font-heading: 'Orbitron', sans-serif;
+  --font-body: 'Space Mono', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--space-black);
+  color: var(--space-white);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  color: var(--space-cyan);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--space-pink);
+  text-shadow: 0 0 10px var(--space-pink);
+}
+
+button {
+  font-family: var(--font-heading);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--space-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--space-purple);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--space-pink);
+}
+
+/* Responsive Typography & Global Styles */
+@media (max-width: 768px) {
+  :root {
+    --spacing-md: 1.5rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 4rem;
+  }
+
+  html {
+    font-size: 14px; /* Scale down base font size */
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: var(--spacing-lg) var(--spacing-sm);
+    scroll-margin-top: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 13px;
+  }
+}

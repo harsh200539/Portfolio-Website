@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Poller+One&display=swap");
+
+.skill-section {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    /* background: #111; */
+    overflow: hidden;
+}
+
+.skill-section canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: grab;
+    position: relative;
+    z-index: 100;
+}
+
+.skill-section canvas:active {
+    cursor: grabbing;
+}
+
+.seo-text {
+    position: absolute;
+    left: -9999px;
+}

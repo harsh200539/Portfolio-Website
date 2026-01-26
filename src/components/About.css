@@ -1,0 +1,151 @@
+.about {
+    /* background: linear-gradient(180deg, var(--space-blue), var(--space-dark)); */
+    position: relative;
+}
+
+.about::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: radial-gradient(circle at 20% 50%, rgba(107, 76, 154, 0.2), transparent),
+        radial-gradient(circle at 80% 80%, rgba(77, 212, 232, 0.1), transparent); */
+    /* background-color: black; */
+    pointer-events: none;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.about-image {
+    opacity: 0;
+}
+
+.image-wrapper {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-placeholder {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.avatar-circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, var(--space-cyan), var(--space-purple));
+    box-shadow:
+        0 0 40px rgba(77, 212, 232, 0.5),
+        0 0 80px rgba(107, 76, 154, 0.3),
+        inset 0 0 40px rgba(0, 0, 0, 0.3);
+    animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.about-text {
+    opacity: 0;
+    width: 100%;
+    max-width: 1000px;
+    /* Adjust this to control the width of the card */
+    margin: 0 auto;
+    /* Centers the text container */
+}
+
+/* 
+   To adjust the Space Card's height and position:
+   1. The height adjusts automatically to content (padding + text).
+   2. To force a height, add 'min-height: 500px;' to .space-card below.
+   3. To move it up/down, adjust 'margin' or 'padding'.
+*/
+.about-text .space-card {
+    /* min-height: 400px;  <-- Uncomment and change value to set fixed height */
+    /* margin-top: 20px;   <-- Uncomment to push it down */
+}
+
+.about-text h3 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--space-cyan);
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+    color: rgba(240, 244, 248, 0.9);
+}
+
+.about-stats {
+    display: flex;
+    justify-content: space-evenly;
+    /* Distributes space around items */
+    gap: 4rem;
+    /* Adds consistent space between items */
+    margin-top: 2.5rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid rgba(77, 212, 232, 0.2);
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item h4 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 900;
+}
+
+.stat-item p {
+    font-size: 0.9rem;
+    color: rgba(240, 244, 248, 0.7);
+    margin: 0;
+}
+
+@media (max-width: 968px) {
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .about-image,
+    .about-text {
+        text-align: center;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-placeholder {
+        width: 250px;
+        height: 250px;
+    }
+
+    .avatar-circle {
+        width: 200px;
+        height: 200px;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
