@@ -6,7 +6,7 @@ import { FaCode, FaPaintBrush, FaMobileAlt, FaRobot, FaFigma } from 'react-icons
 function Services() {
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 400,
       once: false,
     });
   }, []);

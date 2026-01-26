@@ -166,3 +166,29 @@
         animation-name: float-mobile;
     }
 }
+/* Message Styles */
+.form-message {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.95rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.form-message.success {
+  background: rgba(77, 232, 126, 0.1);
+  border: 1px solid rgba(77, 232, 126, 0.3);
+  color: #4de87e;
+}
+
+.form-message.error {
+  background: rgba(255, 77, 77, 0.1);
+  border: 1px solid rgba(255, 77, 77, 0.3);
+  color: #ff4d4d;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

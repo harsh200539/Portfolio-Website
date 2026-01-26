@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 function Skills() {
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 400,
       once: false,
     });
   }, []);

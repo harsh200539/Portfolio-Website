@@ -7,7 +7,7 @@ function Projects() {
 
   useEffect(() => {
     AOS.init({
-      duration: 800,
+      duration: 400,
       once: false,
     });
   }, []);

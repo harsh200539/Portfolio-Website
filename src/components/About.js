@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 function About() {
   useEffect(() => {
   AOS.init({
-    duration: 800,
+    duration: 400,
     once: false,
   });
 }, []);

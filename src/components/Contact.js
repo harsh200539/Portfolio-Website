@@ -29,15 +29,14 @@ function Contact() {
     )
       .then(() => {
         setStatus('success');
-        alert('Thank you for your message! I will get back to you soon.');
         setFormData({ name: '', email: '', message: '' });
+        // Reset status after 5 seconds
+        setTimeout(() => setStatus(''), 5000);
       }, (error) => {
         console.error('Error:', error);
         setStatus('error');
-        alert('Failed to send message. Please try again.');
-      })
-      .finally(() => {
-        setStatus('');
+        // Reset status after 5 seconds
+        setTimeout(() => setStatus(''), 5000);
       });
   };
 
@@ -166,6 +165,18 @@ function Contact() {
               <button type="submit" className="btn-primary" disabled={status === 'sending'}>
                 {status === 'sending' ? 'Sending...' : 'Send Message'}
               </button>
+              
+              {status === 'success' && (
+                <div className="form-message success">
+                  Thank you! Your message has been sent successfully.
+                </div>
+              )}
+
+              {status === 'error' && (
+                <div className="form-message error">
+                  Oops! Something went wrong. Please try again.
+                </div>
+              )}
             </form>
           </div>
         </div>

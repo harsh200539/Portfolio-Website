@@ -39,7 +39,7 @@ function Navigation() {
   return (
     <nav className={`navigation ${scrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
-        <div className="nav-logo">
+        <div className="nav-logo" onClick={() => scrollToSection('home')}>
           <span className="logo-text glow-text">PORTFOLIO</span>
         </div>
         
