@@ -73,7 +73,7 @@ function Footer() {
         
         <div className="footer-bottom">
           <p>&copy; {currentYear} Harshvardhan Patil's Portfolio. All rights reserved.</p>
-          <p>Designed with ❤️ and ☕</p>
+          {/* <p>Designed with ❤️ and ☕</p> */}
         </div>
       </div>
     </footer>
