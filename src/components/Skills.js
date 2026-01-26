@@ -63,6 +63,7 @@ const skillsList = [
     { name: "Git", logo: "git.svg" },
     { name: "GitHub", logo: "github.svg" },
     { name: "Figma", logo: "figma.svg" },
+    { name: "Kotlin", logo: "kotlin.svg" },
 ];
 
 export default Skills;

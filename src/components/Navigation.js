@@ -11,7 +11,7 @@ function Navigation() {
       setScrolled(window.scrollY > 50);
       
       // Update active section based on scroll position
-      const sections = ['home', 'about', 'skills', 'projects', 'contact'];
+      const sections = ['home', 'about', 'skills', 'services', 'projects', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -76,6 +76,14 @@ function Navigation() {
               onClick={() => scrollToSection('skills')}
             >
               Skills
+            </button>
+          </li>
+          <li>
+            <button 
+              className={activeSection === 'services' ? 'active' : ''}
+              onClick={() => scrollToSection('services')}
+            >
+              Services
             </button>
           </li>
           <li>
