@@ -41,7 +41,29 @@ export default function SkillsNetwork() {
       });
     });
 
+    // Touch events
+    window.addEventListener("touchstart", (e) => {
+      const rect = canvas.getBoundingClientRect();
+      const touch = e.touches[0];
+      const x = touch.clientX - rect.left;
+      const y = touch.clientY - rect.top;
+      
+      nodes.forEach((node) => {
+        const r = node.getRadius();
+        const dist = Math.hypot(x - node.x, y - node.y);
+        if (dist < r + 10) {
+          isDragging = true;
+          draggedNode = node;
+        }
+      });
+    }, { passive: false });
+
     window.addEventListener("mouseup", () => {
+      isDragging = false;
+      draggedNode = null;
+    });
+
+    window.addEventListener("touchend", () => {
       isDragging = false;
       draggedNode = null;
     });
@@ -62,6 +84,25 @@ export default function SkillsNetwork() {
         BOUNDS.height - r
       );
     });
+
+    window.addEventListener("touchmove", (e) => {
+      if (!isDragging || !draggedNode) return;
+      e.preventDefault(); // Prevent scrolling while dragging
+      const rect = canvas.getBoundingClientRect();
+      const touch = e.touches[0];
+      const x = touch.clientX - rect.left;
+      const y = touch.clientY - rect.top;
+
+      const r = draggedNode.getRadius();
+      draggedNode.targetX = Math.min(
+        Math.max(x, r),
+        BOUNDS.width - r
+      );
+      draggedNode.targetY = Math.min(
+        Math.max(y, r),
+        BOUNDS.height - r
+      );
+    }, { passive: false });
 
     function lerp(a, b, t) {
       return a + (b - a) * t;
