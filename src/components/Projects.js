@@ -36,7 +36,15 @@ function Projects() {
       description: 'A modern, immersive personal portfolio website built with React, featuring a space-themed design, interactive 3D/canvas animations, and a fully responsive layout.',
       technologies: ['React', 'CSS3', 'HTML5 Canvas', 'Bootstrap', 'AOS', 'EmailJS'],
       github: 'https://github.com/harsh200539/Portfolio-Website'
-    },
+    }
+    ,
+    {
+      title: 'Blue Panda Digital Marketing',
+      description: 'Blue Panda is a modern, responsive web application designed for a digital marketing and creative solutions agency. Inspired by top-tier agency portfolios, this project showcases interactive 3D elements, smooth animations, and a sleek, professional user interface using the latest React ecosystem',
+      technologies: ['React', 'React Router', 'Three.js', 'React Three Fiber', 'AOS', 'CSS'],
+      github: 'https://bluepandadigitalmarketing.com/'
+    }
+    ,
     {
       title: 'CENT Banking Application',
       description: 'CENT is a fully integrated e-commerce application designed to deliver secure transactions, user-centric authentication, and a powerful admin interface tailored for streamlined store',
