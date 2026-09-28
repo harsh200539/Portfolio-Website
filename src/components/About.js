@@ -15,7 +15,7 @@ function About() {
       <div className="container">
         <h2 className="section-title animate-fade-in">About Me</h2>
         <p className="section-subtitle animate-fade-in delay-1">
-          Exploring the digital universe one project at a time
+          Full stack development, CRM systems and automation in Vadodara
         </p>
         
         <div className="about-content">
@@ -29,15 +29,15 @@ function About() {
           
           <div className="about-text animate-slide-right">
             <div className="space-card">
-              <h3>Harshvardhan — The Digital Space Explorer</h3>
+              <h3>Harshvardhan Patil — Developer in Vadodara</h3>
               <p>
-                I'm Harshvardhan Patil, a 20-year-old Full Stack Developer who loves turning ideas into smooth, fast, and visually striking digital experiences. My journey started with simple curiosity—how do digital worlds come alive? That curiosity soon evolved into a full-fledged passion for building applications that feel natural, intuitive, and enjoyable to use.
+                I'm Harshvardhan Patil, a full stack and automation developer based in Vadodara, Gujarat. I work on event websites, booking and reporting workflows, CRM features and tools that reduce repetitive operations.
               </p>
               <p>
-                I navigate the ever-expanding universe of web technologies, creating clean, efficient code and modern UI/UX experiences. Whether it's frontend animations, backend logic, or full-stack architecture, I love bringing everything together into a polished, production-ready solution.
+                My work combines React and Next.js interfaces with Django and Python backends. At LINQ Corporate Solutions, I support the development of event websites and internal systems for a global business conference team.
               </p>
               <p>
-                When I’m not deep in code, you’ll find me experimenting with new tools, contributing to projects, or daydreaming about futuristic tech and space adventures. I thrive on learning, exploring, and leveling up with every project I touch.
+                I'm also developing AI agent and automation workflows. This portfolio links to public code and live work where available; you can contact me below about a project or a developer role.
               </p>
               
               <div className="about-stats">

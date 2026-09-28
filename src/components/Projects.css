@@ -69,6 +69,12 @@
     flex-grow: 1;
 }
 
+.project-contribution, .project-note {
+    color: rgba(240, 244, 248, 0.76);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
 .project-tech {
     display: flex;
     flex-wrap: wrap;

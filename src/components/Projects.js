@@ -14,49 +14,49 @@ function Projects() {
 
   const projectsData = [
     {
+      title: 'LINQ CRM — Event Booking System',
+      description: 'An internal event booking and reporting system for conference operations. It organizes events, invoices, delegates, payment statuses and team access in one workflow.',
+      contribution: 'Work focus: React interface, Django API, booking workflows and reporting.',
+      technologies: ['React', 'Django', 'Python', 'CRM', 'Reporting'],
+      note: 'Professional project — details available on request'
+    },
+    {
       title: 'LinguaLearn-AI',
       description: 'LinguaLearn-AI is a 3D AI-powered learning platform that delivers multilingual lessons with an interactive avatar teacher.',
+      contribution: 'Explore the code for the avatar, lesson and multilingual experience.',
       technologies: ['HTML5', 'Tailwind CSS', 'Three.js', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'OpenAI API', 'Google Translate API', 'Ready Player Me API'],
       github: 'https://github.com/harsh200539/LinguaLearn-AI'
     },
     {
       title: 'SkillFlow AI',
       description: 'SkillFlow AI is a modern, full-stack application designed to provide an interactive platform for skills assessment, mentorship, and gamified learning. This project implements a high-fidelity frontend design originally created in Figma, backed by a robust Django API.',
+      contribution: 'Work focus: translating a Figma design into a frontend backed by a Django API.',
       technologies: ['HTML5', 'Tailwind CSS',  'Node.js', 'Express.js', 'Django', 'Gemini API', 'Socket.io'],
       github: 'https://github.com/harsh200539/SkillFlow_AI'
     },
     {
-      title: 'Wexler Marketing',
-      description: 'A high-fidelity clone of the Wexler Marketing website, built to demonstrate modern web development practices using Next.js 15, React 19, and Tailwind CSS. This project focuses on replicating the premium aesthetic, smooth animations, and responsive layout of the original site.',
-      technologies: ['Next.js', 'React', 'Tailwind CSS', 'Bootstrap', 'TypeScript', 'AOS'],
-      github: 'https://github.com/harsh200539/Wexler_Marketing'
-    },
-    {
       title: 'My Portfolio Website',
       description: 'A modern, immersive personal portfolio website built with React, featuring a space-themed design, interactive 3D/canvas animations, and a fully responsive layout.',
+      contribution: 'Work focus: React components, visual design, animation and responsive layout.',
       technologies: ['React', 'CSS3', 'HTML5 Canvas', 'Bootstrap', 'AOS', 'EmailJS'],
       github: 'https://github.com/harsh200539/Portfolio-Website'
     }
     ,
     {
       title: 'Blue Panda Digital Marketing',
-      description: 'Blue Panda is a modern, responsive web application designed for a digital marketing and creative solutions agency. Inspired by top-tier agency portfolios, this project showcases interactive 3D elements, smooth animations, and a sleek, professional user interface using the latest React ecosystem',
+      description: 'A responsive digital marketing website with interactive 3D elements and a portfolio-style interface.',
+      contribution: 'Work focus: React interface and interactive presentation.',
       technologies: ['React', 'React Router', 'Three.js', 'React Three Fiber', 'AOS', 'CSS'],
-      github: 'https://bluepandadigitalmarketing.com/'
+      live: 'https://bluepandadigitalmarketing.com/'
     }
     ,
     {
       title: 'CENT Banking Application',
-      description: 'CENT is a fully integrated e-commerce application designed to deliver secure transactions, user-centric authentication, and a powerful admin interface tailored for streamlined store',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe','Machine Learning', 'Python','TensorFlow', 'PyTorch', 'OpenCV'],
+      description: 'A Python banking-sector project exploring the use of face detection to help reduce fraudulent activity. The public repository contains the implementation.',
+      contribution: 'Explore the repository for the scope and implementation.',
+      technologies: ['Python', 'Face Detection', 'Banking'],
       github: 'https://github.com/harsh200539/CENT.........Face-Detection-Software-For-Banks'
-    },
-    {
-      title: 'Bank Database',
-      description: 'A real-time SQL operations viewer designed to demonstrate how banking transactions are handled internally, with interactive charts displaying query activity and data updates.',
-      technologies: ['SQL', 'MySQL / PostgreSQL', 'Docker'],
-      github: 'https://github.com/harsh200539/Bank-Database'
-    },
+    }
     
   ];
 
@@ -87,6 +87,7 @@ function Projects() {
               </div>
               
               <p className="project-description">{project.description}</p>
+              <p className="project-contribution">{project.contribution}</p>
               
               <div className="project-tech">
                 {project.technologies.map(tech => (
@@ -95,10 +96,13 @@ function Projects() {
               </div>
               
               <div className="project-links">
-                <a href={project.github} className="project-link">
-                  <span>GitHub</span>
-                  <span className="arrow">→</span>
-                </a>
+                {project.github && <a href={project.github} className="project-link" target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} on GitHub`}>
+                  <span>GitHub</span><span className="arrow">→</span>
+                </a>}
+                {project.live && <a href={project.live} className="project-link" target="_blank" rel="noopener noreferrer" aria-label={`View ${project.title} live site`}>
+                  <span>Live site</span><span className="arrow">→</span>
+                </a>}
+                {project.note && <span className="project-note">{project.note}</span>}
               </div>
             </div>
           ))}

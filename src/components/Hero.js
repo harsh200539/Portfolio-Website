@@ -33,11 +33,11 @@ function Hero() {
             Harshvardhan Patil
           </h1>
           <h2 className="hero-subtitle">
-            Full Stack Developer & Creative Designer
+            Full Stack Developer & Automation Developer
           </h2>
           <p className="hero-description">
-            Crafting digital experiences that are out of this world. 
-            Specializing in modern web technologies and innovative solutions.
+            I'm a developer in Vadodara, Gujarat, building event websites, CRM systems
+            and practical AI automations with React, Django and Python.
           </p>
           
           <div className="hero-buttons">

@@ -99,7 +99,7 @@ function Contact() {
                   </span>
                   <div>
                     <h4>Location</h4>
-                    <p>Vadodara, Gujrat</p>
+                    <p>Vadodara, Gujarat, India</p>
                   </div>
                 </div>
               </div>

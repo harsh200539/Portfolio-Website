@@ -40,7 +40,7 @@ function Footer() {
               </li>
               <li>
                 <a 
-                  href="https://linkedin.com" 
+                  href="https://www.linkedin.com/in/hpatil1704"
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="LinkedIn"
@@ -50,7 +50,7 @@ function Footer() {
               </li>
               <li>
                 <a 
-                  href="https://twitter.com" 
+                  href="https://x.com/harshva06392054?s=11"
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="Twitter"
@@ -60,7 +60,7 @@ function Footer() {
               </li>
               <li>
                 <a 
-                  href="https://instagram.com" 
+                  href="https://www.instagram.com/patil_harshvardhan_05/"
                   target="_blank" 
                   rel="noopener noreferrer"
                   aria-label="Instagram"

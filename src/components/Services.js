@@ -21,7 +21,7 @@ function Services() {
   const services = [
     {
       title: "Full Stack Web Development",
-      description: "Specialized in building end-to-end web applications using React, Next.js, and Django. delivering robust and scalable solutions.",
+      description: "Building web applications with React and Next.js frontends, Django APIs, and practical workflows for teams.",
       icon: <FaCode />
     },
     {
@@ -35,13 +35,13 @@ function Services() {
       icon: <FaFigma />
     },
     {
-      title: "AI/ML Model Development",
-      description: "Building and deploying intelligent machine learning models and AI solutions using Python to solve complex problems.",
+      title: "AI & Workflow Automation",
+      description: "Designing agent-assisted workflows, integrations and repeatable processes with Python and connected tools.",
       icon: <FaRobot />
     },
     {
-      title: "App Development (Android)",
-      description: "Developing high-performance Android mobile applications with a focus on usability and performance.",
+      title: "CRM & Internal Tools",
+      description: "Building booking, reporting and operations tools that help teams manage records and day-to-day work.",
       icon: <FaMobileAlt />
     }
   ];

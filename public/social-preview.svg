@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x2="1" y2="1">
+      <stop stop-color="#0b0f1a"/>
+      <stop offset="1" stop-color="#1b2346"/>
+    </linearGradient>
+    <linearGradient id="accent">
+      <stop stop-color="#4dd4e8"/>
+      <stop offset="1" stop-color="#a966b6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1000" cy="110" r="170" fill="#4dd4e8" opacity=".07"/>
+  <circle cx="1100" cy="540" r="250" fill="#a966b6" opacity=".09"/>
+  <path d="M80 120h230" stroke="url(#accent)" stroke-width="6"/>
+  <text x="80" y="105" fill="#4dd4e8" font-family="DejaVu Sans, sans-serif" font-size="28" letter-spacing="6">PORTFOLIO</text>
+  <text x="80" y="300" fill="#f0f4f8" font-family="DejaVu Sans, sans-serif" font-weight="bold" font-size="72">Harshvardhan Patil</text>
+  <text x="80" y="375" fill="#4dd4e8" font-family="DejaVu Sans, sans-serif" font-size="35">Full Stack &amp; Automation Developer</text>
+  <text x="80" y="435" fill="#c8d1df" font-family="DejaVu Sans, sans-serif" font-size="27">React · Django · CRM · AI Automation</text>
+  <text x="80" y="545" fill="#c8d1df" font-family="DejaVu Sans, sans-serif" font-size="25">Vadodara, Gujarat · harshvardhanpatil.in</text>
+</svg>
