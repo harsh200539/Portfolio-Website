@@ -1,16 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Projects.css';
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function Projects() {
-
-  useEffect(() => {
-    AOS.init({
-      duration: 400,
-      once: false,
-    });
-  }, []);
 
   const projectsData = [
     {
@@ -118,12 +109,11 @@ function Projects() {
         </div>
         
         <div className="projects-grid">
-          {projectsData.map((project, index) => (
+          {projectsData.map((project) => (
             <div 
               key={project.title} 
               className={`project-card space-card`}
               data-aos="fade-up"
-              data-aos-delay={index * 200}
             >
               <div className="project-header">
                 <h3>{project.title}</h3>

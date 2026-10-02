@@ -1,16 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Services.css';
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { FaCode, FaPaintBrush, FaMobileAlt, FaRobot, FaFigma } from 'react-icons/fa';
 function Services() {
-  useEffect(() => {
-    AOS.init({
-      duration: 400,
-      once: false,
-    });
-  }, []);
-
   const handleEnquire = () => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
@@ -62,7 +53,7 @@ function Services() {
               key={index} 
               className="service-card glass"
               data-aos="fade-up"
-              data-aos-delay={index * 100}
+              data-aos-delay={index * 40}
             >
               <div className="service-icon">{service.icon}</div>
               <h3 className="service-title">{service.title}</h3>

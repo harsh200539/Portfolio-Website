@@ -1,15 +1,6 @@
 import React from 'react';
 import './About.css';
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from 'react';
 function About() {
-  useEffect(() => {
-  AOS.init({
-    duration: 400,
-    once: false,
-  });
-}, []);
   return (
     <section id="about" className="about section"data-aos="fade-up">
       <div className="container">

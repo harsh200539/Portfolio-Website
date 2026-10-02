@@ -1,17 +1,9 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Skills.css';
 // import './skillnetwork.css';
 import SkillsNetwork from './skillnetwork';
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 function Skills() {
-  useEffect(() => {
-    AOS.init({
-      duration: 400,
-      once: false,
-    });
-  }, []);
 
   return (
     <section id="skills" className="skills section" data-aos="fade-up">
