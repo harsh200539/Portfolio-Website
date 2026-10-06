@@ -41,6 +41,7 @@ function About() {
                   <p>Projects Completed</p>
                 </div>
               </div>
+              <a href="/Harshvardhan-Patil-Resume.pdf" download>Download my resume (PDF) →</a>
             </div>
           </div>
         </div>

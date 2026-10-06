@@ -13,18 +13,25 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Stars from './components/Stars';
+import PortfolioDetails from './components/PortfolioDetails';
+import DetailPage from './components/DetailPage';
 
-function App() {
+function App({ pathname = '/' }) {
   useEffect(() => {
+    document.documentElement.classList.add('js-ready');
     AOS.init({ duration: 250, once: true, offset: 60 });
     // Force scroll to top on page load/refresh
-    window.scrollTo(0, 0);
+    if (window.location.hash) {
+      document.getElementById(window.location.hash.slice(1))?.scrollIntoView();
+    } else window.scrollTo(0, 0);
     
     // Prevent browser from restoring scroll position
     if (window.history.scrollRestoration) {
       window.history.scrollRestoration = 'manual';
     }
   }, []);
+
+  if (pathname !== '/') return <DetailPage pathname={pathname.replace(/\/$/, '')} />;
 
   return (
     <div className="App">
@@ -35,6 +42,7 @@ function App() {
       <Skills />
       <Services />
       <Projects />
+      <PortfolioDetails />
       <Contact />
       <Footer />
     </div>
