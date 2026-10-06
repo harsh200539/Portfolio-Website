@@ -43,7 +43,9 @@
     align-items: center;
 }
 
-.nav-links li button {
+.nav-links li a {
+    display: inline-block;
+    font-family: var(--font-heading);
     background: none;
     color: var(--space-white);
     font-size: 1rem;
@@ -53,7 +55,7 @@
     transition: all 0.3s ease;
 }
 
-.nav-links li button::after {
+.nav-links li a::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -65,13 +67,13 @@
     transition: width 0.3s ease;
 }
 
-.nav-links li button:hover,
-.nav-links li button.active {
+.nav-links li a:hover,
+.nav-links li a.active {
     color: var(--space-cyan);
 }
 
-.nav-links li button:hover::after,
-.nav-links li button.active::after {
+.nav-links li a:hover::after,
+.nav-links li a.active::after {
     width: 100%;
 }
 
@@ -114,7 +116,7 @@
         right: 0;
     }
 
-    .nav-links li button {
+    .nav-links li a {
         font-size: 1.2rem;
         padding: 1rem;
     }

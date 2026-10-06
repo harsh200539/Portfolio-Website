@@ -31,6 +31,7 @@ function Navigation() {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
+      window.history.replaceState(null, '', '#' + sectionId);
       element.scrollIntoView({ behavior: 'smooth' });
       setMobileMenuOpen(false);
     }
@@ -55,52 +56,52 @@ function Navigation() {
 
         <ul className={`nav-links ${mobileMenuOpen ? 'mobile-open' : ''}`}>
           <li>
-            <button 
+            <a href="#home"
               className={activeSection === 'home' ? 'active' : ''}
               onClick={() => scrollToSection('home')}
             >
               Home
-            </button>
+            </a>
           </li>
           <li>
-            <button 
+            <a href="#about"
               className={activeSection === 'about' ? 'active' : ''}
               onClick={() => scrollToSection('about')}
             >
               About
-            </button>
+            </a>
           </li>
           <li>
-            <button 
+            <a href="#skills"
               className={activeSection === 'skills' ? 'active' : ''}
               onClick={() => scrollToSection('skills')}
             >
               Skills
-            </button>
+            </a>
           </li>
           <li>
-            <button 
+            <a href="#services"
               className={activeSection === 'services' ? 'active' : ''}
               onClick={() => scrollToSection('services')}
             >
               Services
-            </button>
+            </a>
           </li>
           <li>
-            <button 
+            <a href="#projects"
               className={activeSection === 'projects' ? 'active' : ''}
               onClick={() => scrollToSection('projects')}
             >
               Projects
-            </button>
+            </a>
           </li>
           <li>
-            <button 
+            <a href="#contact"
               className={activeSection === 'contact' ? 'active' : ''}
               onClick={() => scrollToSection('contact')}
             >
               Contact
-            </button>
+            </a>
           </li>
         </ul>
       </div>
